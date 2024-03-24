@@ -36,7 +36,7 @@ EOF help quit
 (hbnb) quit
 $
 ```
-### Interactive Mode
+### Non Interactive Mode
 ```
 $ echo "help" | ./console.py
 (hbnb)
@@ -60,4 +60,35 @@ EOF help quit
 (hbnb)
 $
 ```
+## USAGE
+Follow below step to get started
 
+Clone repo to your local machine
+```https://github.com/omoluabi44/AirBnB_clone.git```
+
+Change directory
+``` cd Airbnb_clone ```
+
+run the console
+``` ./console.py ```
+
+### EXECUTING COMMANDS
+to create user for Airbnb and reurn unique id, run this
+```create <classname> ```
+in built classes as follows:
+   - BaseModel
+   - User
+   - Amenity
+   - Place
+   - City
+   - State
+   - Review
+``` create User ```
+
+to view instances created from each classes using specied id run this
+``` show <classname> <id> ```
+``` show User 47f7e540-3806-42a8-bdbd-c6feba35af63
+
+to show all instance or instances of class, run the code respectivley
+```all ```
+```all <classname>```
