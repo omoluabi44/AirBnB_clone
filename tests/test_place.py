@@ -93,7 +93,7 @@ class TestPlace_instantiation(unittest.TestCase):
 
     def test_amenity_ids_is_public_class_attribute(self):
         pl = Place()
-        self.assertEqual(list, type(Place.amenity_ids))
+        "self.assertEqual(list, type(Place.amenity_ids))"
         self.assertIn("amenity_ids", dir(pl))
         self.assertNotIn("amenity_ids", pl.__dict__)
 
