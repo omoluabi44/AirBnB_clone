@@ -64,17 +64,25 @@ $
 Follow below step to get started
 
 Clone repo to your local machine
-```https://github.com/omoluabi44/AirBnB_clone.git```
+```
+https://github.com/omoluabi44/AirBnB_clone.git
+```
 
 Change directory
-``` cd Airbnb_clone ```
+```
+cd Airbnb_clone
+```
 
 run the console
-``` ./console.py ```
+```
+./console.py
+```
 
 ### EXECUTING COMMANDS
 to create user for Airbnb and reurn unique id, run this
-```create <classname> ```
+```
+create <classname>
+```
 in built classes as follows:
    - BaseModel
    - User
@@ -83,12 +91,22 @@ in built classes as follows:
    - City
    - State
    - Review
-``` create User ```
+```
+create User
+```
 
 to view instances created from each classes using specied id run this
-``` show <classname> <id> ```
-``` show User 47f7e540-3806-42a8-bdbd-c6feba35af63
+```
+show <classname> <id>
+```
+```
+show User 47f7e540-3806-42a8-bdbd-c6feba35af63
+```
 
 to show all instance or instances of class, run the code respectivley
-```all ```
-```all <classname>```
+```
+all
+```
+```
+all <classname>
+```
