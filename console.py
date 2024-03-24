@@ -31,6 +31,10 @@ def parse(arg):
         return ret1
 
 class HBNBCommand(cmd.Cmd):
+    """
+    class for airbnd console
+    """
+
     prompt = "(hbnb) "
     class_instances = {
         "BaseModel": BaseModel,
@@ -123,7 +127,6 @@ class HBNBCommand(cmd.Cmd):
         storage.save()
 
     def do_all(self, line):
-        print("all execute")
         """
         show all instance or instance of specified class
         Usage: <command> <class> or <command>
@@ -147,9 +150,11 @@ class HBNBCommand(cmd.Cmd):
             print(tmp_class_name)
 
     def do_update(self, line):
+        """
+        update the class using id
+        """
         argl = parse(line)
         objdict = storage.all()
-        print("update execute")
 
         if len(argl) == 0:
             print("** class name missing **")
