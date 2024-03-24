@@ -241,7 +241,7 @@ class HBNBCommand(cmd.Cmd):
             if instances2_id not in storage.all():
                 print("** no instance found **")
                 return
-            del (models.storage.all()[instances2_id])
+            del (storage.all()[instances2_id])
             storage.save()
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
