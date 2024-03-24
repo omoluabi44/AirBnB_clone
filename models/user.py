@@ -4,6 +4,7 @@
 
 from models.base_model import BaseModel
 
+
 class User(BaseModel):
     """ a class that defines user of Airbnb """
 

@@ -37,7 +37,8 @@ class FileStorage:
         serialize_object = {}
 
         for key, value in self.__objects.items():
-            if isinstance(value, (Review, Place, Amenity, BaseModel, City, User, State)):
+            if isinstance(value, (Review, Place, Amenity,
+                                  BaseModel, City, User, State)):
                 serialize_object[key] = value.to_dict()
             else:
                 serialize_object[key] = value
