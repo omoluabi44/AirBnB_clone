@@ -118,7 +118,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
             return
         instance_id = args[1]
-        all_obj_key = models.storage.all()
+        all_obj_key = storage.all()
         delete_key = "{}.{}".format(class_name, instance_id)
         if delete_key not in all_obj_key:
             print("** no instance found **")
@@ -193,6 +193,6 @@ class HBNBCommand(cmd.Cmd):
                 else:
                     obj.__dict__[k] = v
         storage.save()
-        print("save")
+
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
