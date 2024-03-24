@@ -245,6 +245,7 @@ class HBNBCommand(cmd.Cmd):
                     models.storage.save()
             else:
                 print("*** Unknown syntax: {} ".format(line))
-                
+
+
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
