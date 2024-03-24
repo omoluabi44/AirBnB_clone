@@ -211,17 +211,12 @@ class HBNBCommand(cmd.Cmd):
                 class_name)
             instances = instances_and_count[0]
             instances_count = instances_and_count[1]
-            j = 0
+
             if instances:
-                print("[", end="")
+                all_insta = []
                 for i in instances:
-                    j += 1
-                    if j < instances_count:
-                        print("{}, ".format(i), end="")
-                    else:
-                        print("{}".format(i), end="")
-                print("]")
-                print(j)
+                    all_insta.append(i.__str__())
+                print(all_insta)
         elif command.endswith("count()"):
             instances_and_count = storage.get_intances_by_class(
                 class_name)
