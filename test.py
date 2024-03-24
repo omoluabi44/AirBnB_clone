@@ -1,0 +1,2 @@
+print("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk\
+kkkkkkkkkkkkkhelloword")
