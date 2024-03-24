@@ -23,7 +23,7 @@ This project aims to create a command-line interpreter (CLI) in Python using the
 
 ### Interactive Mode
 
-```bash
+```
 $ ./console.py
 (hbnb) help
 
@@ -35,7 +35,8 @@ EOF help quit
 (hbnb)
 (hbnb) quit
 $
-
+### Interactive Mode
+```
 $ echo "help" | ./console.py
 (hbnb)
 
