@@ -49,6 +49,7 @@ class FileStorage:
         """
         reload back to json
         """
+        print("i got executed ")
         try:
             with open(self.__file_path, "r") as f:
                 data = json.load(f)
