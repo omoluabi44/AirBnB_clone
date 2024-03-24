@@ -95,7 +95,7 @@ in built classes as follows:
 create User
 ```
 
-to view instances created from each classes using specied id run this
+to view instances created from each classes using specified id run this
 ```
 show <classname> <id>
 ```
@@ -103,7 +103,7 @@ show <classname> <id>
 show User 47f7e540-3806-42a8-bdbd-c6feba35af63
 ```
 
-to show all instance or instances of class, run the code respectivley
+to show all instances or instances of class, run the code respectivley
 ```
 all
 ```
