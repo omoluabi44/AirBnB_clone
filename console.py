@@ -191,16 +191,18 @@ class HBNBCommand(cmd.Cmd):
         if class_name not in self.class_instances:
             print("** class doesn't exist **")
             return
-        if command.endswith("all()")
-        instances_and_count = models.storage.get_intances_by_class(class_name)
-        instances = instances_and_count[0]
-        if instances:
-            print("[", end="")
-            for i in instances:
-                print(i, end="")
-                print("]")
+        if command.endswith("all()"):
+            instances_and_count = models.storage.get_intances_by_class(
+                class_name)
+            instances = instances_and_count[0]
+            if instances:
+                print("[", end="")
+                for i in instances:
+                    print(i, end="")
+                    print("]")
         elif command.endswith("count()"):
-            instances_and_count = models.storage.get_intances_by_class(class_name)
+            instances_and_count = models.storage.get_intances_by_class(
+                class_name)
             instances_count = instances_and_count[1]
             if instances_count:
                 print(instances_count)

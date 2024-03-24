@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-""" file storage for my Airbnb clone """
 
 
 import json
