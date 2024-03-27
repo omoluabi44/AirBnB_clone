@@ -119,14 +119,25 @@ class HBNBCommand(cmd.Cmd):
         if class_name not in self.class_instances:
             print("** class doesn't exist **")
             return
-        instance_id = args[1]
-        all_obj_key = storage.all()
-        delete_key = "{}.{}".format(class_name, instance_id)
-        if delete_key not in all_obj_key:
-            print("** no instance found **")
+        if class_name in self.class_instances:
+            all_obj_key = storage.all()
+            delete_key = []
+            for key in all_obj_key.keys():
+                if key.split('.')[0] == class_name:
+                    delete_key.append(key)
+            for key in delete_key:
+                del all_obj_key[key]
+            storage.save()
             return
-        del all_obj_key[delete_key]
-        storage.save()
+        else:
+            instance_id = args[1]
+            all_obj_key = storage.all()
+            delete_key = "{}.{}".format(class_name, instance_id)
+            if delete_key not in all_obj_key:
+                print("** no instance found **")
+                return
+            del all_obj_key[delete_key]
+            storage.save()
 
     def do_all(self, line):
         """
@@ -150,6 +161,7 @@ class HBNBCommand(cmd.Cmd):
                 if obj.__class__.__name__ == class_name:
                     tmp_class_name.append(obj.__str__())
             print(tmp_class_name)
+
 
     def do_update(self, line):
         """
